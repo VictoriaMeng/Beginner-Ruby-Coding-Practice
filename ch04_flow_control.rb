@@ -79,7 +79,29 @@ end
 
 # Exercise 05: Rewrite your program from exercise 3 using a case statement. Wrap each statement in a method and make sure they both still work.
 
-# STILL NEED TO DO THIS
+puts "Enter a number."
+num = gets.chomp.to_i
+
+def what_num?(num)
+	case 
+	when num < 0
+		puts "#{num} is less than 0."
+	when num == 0
+		puts "#{num} is equal to 0."
+	when num > 0 && num < 50
+		puts "#{num} is between 0 and 50."
+	when num == 50
+		puts "#{num} is exactly 50."
+	when num > 50 && num < 100
+		puts "#{num} is between 50 and 100."
+	when num == 100
+		puts "#{num} is exactly 100."
+	when num > 100
+		puts "#{num} is over 100"
+	end
+end
+
+what_num?(num)
 
 
 # Exercise 06: When you run the following code...
