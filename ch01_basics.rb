@@ -27,10 +27,10 @@ puts yr
 
 # Exercise 05: Write a program that outputs the factorial of the numbers 5, 6, 7, and 8.
 
-puts 8 * 7 * 6 * 5 * 4 * 3 *2 *1
-puts 7 * 6 * 5 * 4 * 3 *2 *1
-puts 6 * 5 * 4 * 3 *2 *1
-puts 5 * 4 * 3 *2 *1
+f = [8 * 7 * 6 * 5 * 4 * 3 *2 *1, 7 * 6 * 5 * 4 * 3 *2 *1, 6 * 5 * 4 * 3 *2 *1, 5 * 4 * 3 *2 *1 ]
+f.each do |x| 
+	puts x 
+end 
 
 
 # Exercise 06: Write a program that calculates the squares of 3 float numbers of your choosing and outputs the result to the screen.
