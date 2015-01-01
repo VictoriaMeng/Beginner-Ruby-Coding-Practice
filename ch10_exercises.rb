@@ -44,21 +44,21 @@ h2 = {:k2 => "v2"}
 
 # Exercise 09: Suppose you have a hash 
 
-	h = {a:1, b:2, c:3, d:4}
+  h = {a:1, b:2, c:3, d:4}
 
-	# Get the value of b
+  # Get the value of b
 
-	h[:b]
+  h[:b]
 
-	# Add to this hash the key:value pair `{e:5}`
+  # Add to this hash the key:value pair `{e:5}`
 
-	h[:e] = 5
+  h[:e] = 5
 
-	# Remove all key:value pairs whose value is less than 3.5
+  # Remove all key:value pairs whose value is less than 3.5
 
-	h.delete_if {|k, v| v < 3.5}
+  h.delete_if {|k, v| v < 3.5}
 
-	p h
+  p h
 
 
 # Exercise 10: Can hash values be arrays? Can you have an array of hashes? (give examples)
@@ -80,10 +80,10 @@ a1 = [{k1: "v1"}, {k2: "v2"}]
 
 # Exercise 12: Given the following data structures. Write a program that moves the information from the array into the empty hash that applies to the correct person.
 
-	contact_data = [["joe@email.com", "123 Main st.", "555-123-4567"],
-            	["sally@email.com", "404 Not Found Dr.", "123-234-3454"]]
+  contact_data = [["joe@email.com", "123 Main st.", "555-123-4567"],
+              ["sally@email.com", "404 Not Found Dr.", "123-234-3454"]]
 
-	contacts = {"Joe Smith" => {}, "Sally Johnson" => {}}
+  contacts = {"Joe Smith" => {}, "Sally Johnson" => {}}
 
 contacts["Joe Smith"][:email] = contact_data[0][0]
 contacts["Joe Smith"][:address] = contact_data[0][1]
@@ -105,29 +105,29 @@ puts contacts["Sally Johnson"][:phone]
 fields = [:email, :address, :phone]
 
 contacts.each_with_index do |(name, hash), idx|
-	fields.each do |field|
-		hash[field] = contact_data[idx].shift
-	end
+  fields.each do |field|
+    hash[field] = contact_data[idx].shift
+  end
 end
 
 
 # Exercise 15: Use Ruby's Array method delete_if and String method start_with? to delete all of the words that begin with an "s" in the following array.
 
-	arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
+  arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
 
 # Then recreate the arr and get rid of all of the words that start with "s" or starts with "w".
 
 p arr.delete_if {|string| string.start_with?("s") }
 
-	arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
+  arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
 
 p arr.delete_if {|string| string.start_with?("s") || string.start_with?("w") }
 
 
 # Exercise 16: Take the array and turn it into a new array that consists of strings containing one word. (ex. ["white snow", etc...] → ["white", "snow", etc...]. Look into using Array's map and flatten methods, as well as String's split method.
 
-	a = ['white snow', 'winter wonderland', 'melting ice',
-     	'slippery sidewalk', 'salted roads', 'white trees']
+  a = ['white snow', 'winter wonderland', 'melting ice',
+      'slippery sidewalk', 'salted roads', 'white trees']
 
 a.map {|string| string.split}
 

@@ -14,8 +14,8 @@
 # Exercise 03: Write a program that uses a hash to store a list of movie titles with the year they came out. Then use the puts command to make your program print out the year of each movie to the screen.
 
 film = {  how_green_was_my_valley: 1941, 
-					amadeus: 1984, 
-					titanic: 1997  }
+          amadeus: 1984, 
+          titanic: 1997  }
 puts film.values
 
 
@@ -27,9 +27,9 @@ puts yr
 
 # Exercise 05: Write a program that outputs the factorial of the numbers 5, 6, 7, and 8.
 
-f = [8 * 7 * 6 * 5 * 4 * 3 *2 *1, 7 * 6 * 5 * 4 * 3 *2 *1, 6 * 5 * 4 * 3 *2 *1, 5 * 4 * 3 *2 *1 ]
+f = [8 * 7 * 6 * 5 * 4 * 3 *2 *1, 7 * 6 * 5 * 4 * 3 *2 *1, 6 * 5 * 4 * 3 *2 *1, 5 * 4 * 3 *2 *1]
 f.each do |x| 
-	puts x 
+  puts x 
 end 
 
 
@@ -40,10 +40,14 @@ puts 2.01 * 2.01
 puts 2.00 * 2.02
 
 
-# Exercise 07: What does the following error message tell you?
+=begin 
 
-	# SyntaxError: (irb):2: syntax error, unexpected ')', expecting '}'
-   # from /usr/local/rvm/rubies/ruby-2.0.0-rc2/bin/irb:16:in `<main>'
+Exercise 07: What does the following error message tell you?
+
+  SyntaxError: (irb):2: syntax error, unexpected ')', expecting '}'
+  from /usr/local/rvm/rubies/ruby-2.0.0-rc2/bin/irb:16:in `<main>'
+  
+=end 
 
 "Answer: There is an open hash bracket in the program without a corresponding closing hash bracket."
 

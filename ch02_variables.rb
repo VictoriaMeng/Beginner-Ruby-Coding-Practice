@@ -12,14 +12,14 @@ age_now = gets.chomp.to_i
 
 age_future = {ten: age_now + 10, twenty: age_now + 20, thirty: age_now + 30}
 age_future.each do |k, v|
-	puts "In #{k} years, you'll be #{v}."
+  puts "In #{k} years, you'll be #{v}."
 end
 
 
 # Exercise 03: Add another section onto your answer in Exercise 01 that prints the name of the user 10 times. You must do this without explicitly writing the puts method 10 times in a row.
 
 10.times do
-	puts name
+  puts name
 end
 
 
@@ -32,36 +32,39 @@ last_name = gets.chomp
 puts "Hi, #{first_name} #{last_name}."
 
 
-# Exercise 05: Look at the following two programs...
-# _______________________________
+=begin 
+Exercise 05: Look at the following two programs...
 
-	# x = 0
-	# 3.times do
-  # 	x += 1
-	# end
-	# puts x
-# _______________________________
+x = 0
+3.times do
+  x += 1
+end
+puts x
 
-	# y = 0
-	# 3.times do
-  # 	y+= 1
-	# 	x = y
-	# end
-	# puts x
-# _________________________________
+and...
 
-# What does x print to the screen in each case? Do they both give errors? Are the errors different? Why?
+y = 0
+3.times do
+  y+= 1
+  x = y
+end
+puts x
 
-"Program 01 prints '3' to the screen."
-"Program 02 gives an error message, because 'x' in Program 02 is not defined within the scope of the do/end block."
+What does x print to the screen in each case? Do they both give errors? Are the errors different? Why?
+=end
+
+"Answer: Program 01 prints '3' to the screen."
+"Answer: Program 02 gives an error message, because 'x' in Program 02 is not defined within the scope of the do/end block."
 
 
-# Exercise 06: What does the following error message tell you?
+=begin 
+Exercise 06: What does the following error message tell you?
 
-	# NameError: undefined local variable or method `shoes' for main:Object
-  # from (irb):3
-  # from /usr/local/rvm/rubies/ruby-2.0.0-rc2/bin/irb:16:in `<main>'
+  NameError: undefined local variable or method `shoes' for main:Object
+  from (irb):3
+  from /usr/local/rvm/rubies/ruby-2.0.0-rc2/bin/irb:16:in `<main>'
+=end
 
-"In this program, the variable or method 'shoes' is either undefined in the scope in which it is called, or it is undefined in the entire program altogether."
+"Answer: In this program, the variable or method 'shoes' is either undefined in the scope in which it is called, or it is undefined in the entire program altogether."
 
 

@@ -7,17 +7,20 @@ end
 greeting("Victoria")
 
 
-# Exercise 02: What do the following expressions evaluate to?
+=begin
+Exercise 02: What do the following expressions evaluate to?
 
-	# 1) x = 2
+  1) x = 2
 
-	# 2) puts x = 2
+  2) puts x = 2
+  
+  3) p name = "Joe"
 
-	# 3) p name = "Joe"
+  4) four = "four"
 
-	# 4) four = "four"
+  5) print something = "nothing"
 
-	# 5) print something = "nothing"
+=end
 
 "Answers: 
 	1) => 2
@@ -40,17 +43,19 @@ end
 multiply(2, 3)
 
 
-# Exercise 04: What will the following code print to the screen?
+=begin
+Exercise 04: What will the following code print to the screen?
 
-	# def scream(words)
-	# 	words = words + "!!!!"
-	# 	return
-  # 	puts words
-	# end
+  def scream(words)
+  words = words + "!!!!"
+    return
+    puts words
+  end
 
-	# scream("Yippeee")
+  scream("Yippeee")
+=end
 
-"The code won't print out anything."
+"Answer: The code won't print out anything."
 
 
 # Exercise 04: Edit the method in exercise #4 so that it does print words on the screen. What does it return now?
@@ -62,17 +67,19 @@ end
 
 scream("Yippeee")
 
-"The code will print 'Yippeee!!!'"
+"Answer: The code will print 'Yippeee!!!'"
 
 
-# Exercise 05: What does the following error message tell you?
+=begin
+Exercise 05: What does the following error message tell you?
 
-# 	ArgumentError: wrong number of arguments (1 for 2)
-# 		from (irb):1:in `calculate_product'
-# 		from (irb):4
-# 		from /Users/username/.rvm/rubies/ruby-2.0.0-p353/bin/irb:12:in `<main>'
+  ArgumentError: wrong number of arguments (1 for 2)
+    from (irb):1:in `calculate_product'
+    from (irb):4
+    from /Users/username/.rvm/rubies/ruby-2.0.0-p353/bin/irb:12:in `<main>'
+=end
 
-"The code only provides one argument for a method with two parameters."
+"Answer: The code only provides one argument for a method with two parameters."
 
 
 
